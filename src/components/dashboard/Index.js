@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Test = () => {
     return (
@@ -10,11 +11,6 @@ const Test = () => {
                 <div className="ps-3">
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb mb-0 p-0">
-                            <li className="breadcrumb-item">
-                                <a href="#">
-                                    <i className="bx bx-home-alt"></i>
-                                </a>
-                            </li>
                             <li className="breadcrumb-item active" aria-current="page">
                                 Analysis
                             </li>
@@ -26,10 +22,12 @@ const Test = () => {
                         <button type="button" className="btn btn-outline-primary">Settings</button>
                         <button type="button" className="btn btn-outline-primary split-bg-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">	<span className="visually-hidden">Toggle Dropdown</span>
                         </button>
-                        <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	<a className="dropdown-item" href="#">Action</a>
-                            <a className="dropdown-item" href="#">Another action</a>
-                            <a className="dropdown-item" href="#">Something else here</a>
-                            <div className="dropdown-divider"></div><a className="dropdown-item" href="#">Separated link</a>
+                        <div className="dropdown-menu dropdown-menu-right dropdown-menu-lg-end">	
+                            <Link className="dropdown-item" to='#'>Action</Link>
+                            <Link className="dropdown-item" to='#'>Another action</Link>
+                            <Link className="dropdown-item" to='#'>Something else here</Link>
+                            <div className="dropdown-divider"></div>
+                            <Link className="dropdown-item" to='#'>Separated link</Link>
                         </div>
                     </div>
                 </div>
