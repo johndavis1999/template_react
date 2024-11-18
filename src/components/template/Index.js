@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Side from './Side';
+import CustomTemplate from './CustomTemplate';
 import Main from './Main';
 
 const Template = ({ children }) => {
@@ -8,6 +9,7 @@ const Template = ({ children }) => {
         <>
         <Header/>
         <Side/>
+        <CustomTemplate/>
         <Main children={children}/>
         </>
     );
