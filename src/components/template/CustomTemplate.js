@@ -47,9 +47,9 @@ const CustomTemplate = () => {
                         <h5 className="mb-0">Personalizar tema</h5>
                         {/* <p className="mb-0">Customize your theme</p> */}
                     </div>
-                    <a className="primaery-menu-close" data-bs-dismiss="offcanvas">
+                    <button className="primaery-menu-close" data-bs-dismiss="offcanvas">
                         <i className="fas fa-times"></i>
-                    </a>
+                    </button>
                 </div>
                 <div className="offcanvas-body">
                     <div>
